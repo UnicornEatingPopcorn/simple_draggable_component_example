@@ -1,20 +1,21 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 480px 480px;
 }
 
 .draggableArea {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 200px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 540px;
+  display: flex
 }
 
 .Box {
   width: 100px;
   height: 100px;
-  background-color: white
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
