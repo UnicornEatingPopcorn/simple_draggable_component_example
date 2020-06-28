@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 
-class App extends Component {
+class Draggable extends Component {
   constructor(props) {
     super(props);
     this.handleDragStart = this.handleDragStart.bind(this)
@@ -9,7 +9,7 @@ class App extends Component {
     this.handleOnDrop = this.handleOnDrop.bind(this);
     this.state = {
       box: [{name: "", location:"column_1"}],
-      draggableAreas: [{ id: 1, status: "column_1"}, { id: 2, status: "column_2"}, {id: 3, statu: "column_3"}, {id: 4, status: "column_4"}]
+      draggableAreas: [{ id: 1, status: "column_1"}, { id: 2, status: "column_2"}, {id: 3, status: "column_3"}, {id: 4, status: "column_4"}, {id: 5, status: "column_5"}, {id: 6, status: "column_6"}, {id: 7, status: "column_7"}, {id: 8, status: "column_8"}, {id: 9, status: "column_9"}]
     }
   }
 
@@ -36,7 +36,7 @@ class App extends Component {
   }
 
   render() {
-    let obj = { column_1: [], column_2: [], column_3: [], column_4: []}
+    let obj = { column_1: [], column_2: [], column_3: [], column_4: [], column_5: [], column_6: [], column_7: [], column_8: [], column_9: []}
     let areasToDrop = []
 
     this.state.box.forEach(box=> {
@@ -64,4 +64,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Draggable;

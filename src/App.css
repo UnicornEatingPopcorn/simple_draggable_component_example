@@ -6,9 +6,10 @@
 .draggableArea {
   background-color: #282c34;
   height: 200px;
-  align-items: center;
   width: 540px;
-  display: flex
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 .Box {
